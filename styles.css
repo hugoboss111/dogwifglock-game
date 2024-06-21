@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'GameFont';
+    src: url('font.otf');
+}
+
+@font-face {
+    font-family: 'ButtonFont';
+    src: url('fontbutton.ttf');
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.webp') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+#mainMenu, #pauseMenu, #gameOverMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#mainMenu h1, #pauseMenu h1, #gameOverMenu h1 {
+    font-family: 'GameFont';
+    margin-bottom: 20px;
+}
+
+.menuButton {
+    background: url('button.png') no-repeat center center;
+    background-size: cover;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-family: 'ButtonFont';
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.menuButton:hover {
+    opacity: 0.8;
+}
+
+canvas {
+    display: block;
+}
+
+#pauseButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#pauseButton img {
+    width: 40px;
+    height: 40px;
+}
+
+#pauseMenu, #gameOverMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#yoBlock {
+    display: none;
+}
+
+#scoreBoard {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    color: white;
+    font-family: 'GameFont';
+    font-size: 35px;
+}

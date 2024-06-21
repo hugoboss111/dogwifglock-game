@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$GLOCK - Defend yo block</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mainMenu">
+        <h1>$GLOCK - Defend yo block</h1>
+        <button id="startButton" class="menuButton">Play</button>
+    </div>
+    <canvas id="gameCanvas" style="display: none;"></canvas>
+    <div id="pauseButton" style="display: none;">
+        <img src="pause.png" alt="Pause">
+    </div>
+    <div id="pauseMenu" style="display: none;">
+        <h1>Paused</h1>
+        <button id="resumeButton" class="menuButton">Resume</button>
+        <button id="quitButton" class="menuButton">Quit</button>
+    </div>
+    <div id="gameOverMenu" style="display: none;">
+        <h1>Game Over</h1>
+        <button id="quitGameOverButton" class="menuButton">Quit</button>
+        <button id="playAgainButton" class="menuButton">Play Again</button>
+    </div>
+    <div id="yoBlock"></div>
+    <div id="scoreBoard">
+        <p>High Score: <span id="highScore">0</span></p>
+        <p>Score: <span id="currentScore">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
